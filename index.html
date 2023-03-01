@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto Final Integrador, el cual consiste en diseñar un CV usando HTML, CSS y JavaScript.">
+    <meta name="keywords" content="Currículum Vitae, CV, HTML, CSS, JavaScript">
+    <meta name="author" content="Carlos Cuello">
+    <title>Currículum Vitae - Proyecto Final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="iconocv.ico">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <script src="https://kit.fontawesome.com/db931a8949.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="clearfix">
+        <!--Barra de Navegación-->
+        <div class="dropdown">
+            <button type="button" class="dropbtn" onclick="clickMenu()">Menú</button>
+            <ul class="dropdown-contenido" id="miDropdown">
+                <li><a href="#"><i class="fa-solid fa-circle-user fa-fw"></i> Inicio</a></li>
+                <li><a href="#exp"><i class="fa-solid fa-suitcase fa-fw"></i> Experiencia</a></li>
+                <li><a href="#formacion"><i class="fa-solid fa-user-graduate fa-fw"></i> Formación Académica</a></li>
+                <li><a href="#hab"><i class="fa-solid fa-lightbulb fa-fw"></i> Habilidades</a></li>
+                <li><a href="#idiom"><i class="fa-solid fa-language fa-fw"></i> Idiomas</a></li>
+                <li><a href="#intereses"><i class="fa-solid fa-futbol fa-fw"></i> Intereses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="clearfix">
+        <!--Foto, Nombre y Apellido, Trabajo-->
+        <section class="columna centro">
+            <div class="cajaprop">
+                <img src="foto.png" alt="Foto de Bruno Morel" style="width:400px;height:400px;" id="foto">
+            </div>
+            <h1>BRUNO MOREL</h1>
+            <h2>INGENIERO ELECTROMECÁNICO</h2>
+        </section>
+        <!--Datos Personales-->
+        <section class="columna datos">
+            <h3><i class="fa-solid fa-address-card fa-fw"></i> Datos Personales</h3>
+            <hr>
+            <ul>
+                <li><i class="fa-solid fa-calendar-day fa-fw"></i> Fecha de nacimiento: 18/12/1982 (Edad: 40 años)</li>
+                <li><i class="fa-solid fa-mobile-screen fa-fw"></i> Teléfono: 56 2 2470 8000</li>
+                <li><i class="fa-solid fa-envelope fa-fw"></i> E-mail: <a href="mailto:brunomorel@example.com" target="_blank" title="Enviar un e-mail a Bruno Morel">brunomorel@example.com</a></li>
+                <li><i class="fa-solid fa-location-dot fa-fw"></i> Dirección: <a href="https://www.google.com/maps/place/Gigantograf%C3%ADa+conmemorativa+al+%22Dibu%22+Mart%C3%ADnez/@-37.9992884,-57.5431379,18.12z/data=!4m6!3m5!1s0x9584dd0a3d98e439:0x79fa02da3d4b126f!8m2!3d-37.9990341!4d-57.5423986!16s%2Fg%2F11sd9ktwjd" target="_blank" title="Abrir ubicación en otra pestaña">Diag. Alberdi Sur 2500, Mar del Plata, Buenos Aires, Argentina</a></li>
+            </ul>
+        </section>
+    </header>
+    <section class="info">
+        <!--Detalles de cada ítem de la barra de navegación-->
+        <h3 id="exp"><i class="fa-solid fa-suitcase fa-fw"></i> Experiencia</h3>
+        <hr>
+        <h4>Mantenimiento de máquinas</h4>
+        <h5>2022 - 2023</h5>
+        <p>Me desempeñé como encargado de mantenimiento general de máquinas en la empresa Frigorífico BM S.A.</p>
+        <h4>Reparación y mantenimiento de acondicionadores de aire industriales</h4>
+        <h5>2017 - 2021</h5>
+        <p>Me desempeñé como encargado de mantenimiento general de acondicionadores de aire industriales en la empresa BM Refrigeración Industrial S.R.L.</p>
+        <h4>Reparación de refrigeradores</h4>
+        <h5>2010 - 2017</h5>
+        <p>Me desempeñé como encargado de reparaciones en la empresa Service Refrigeradores MDP.</p>
+        <h3 id="formacion"><i class="fa-solid fa-user-graduate fa-fw"></i> Formación Académica</h3>
+        <hr>
+        <h4>Ingeniería Electromecánica</h4>
+        <h5>2003 - 2009</h5>
+        <p>Graduado en el año 2009 en <a href="https://www.frvt.utn.edu.ar/" target="_blank" title="Abrir página web en otra pestaña">Universidad Tecnológica Nacional Facultad Regional Venado Tuerto</a> - Santa Fe - Argentina.</p>
+        <h4>Técnicatura en Electromecánica</h4>
+        <h5>1995 - 2000</h5>
+        <p>Graduado en el año 2000 en E.E.S.T Nº 1: ESCUELA DE EDUCACIÓN SECUNDARIA TÉCNICA Nº1 "Cte. Luis Piedrabuena" de Mar del Plata.</p>
+        <h3 id="hab"><i class="fa-solid fa-lightbulb fa-fw"></i> Habilidades</h3>
+        <hr>
+        <ul>
+            <li>Facilidad para adaptarse a grupos de trabajo.</li>
+            <li>Actitud proactiva.</li>
+            <li>Buen carácter.</li>
+        </ul>
+        <h3 id="idiom"><i class="fa-solid fa-language fa-fw"></i> Idiomas</h3>
+        <hr>
+        <ul>
+            <li>Español: Nivel Nativo</li>
+            <li>Inglés: Nivel Intermedio (Certificado B1)</li>
+            <li>Francés: Nivel Avanzado</li>
+            <li>Catalán: Nivel Básico</li>
+        </ul>
+        <h3 id="intereses"><i class="fa-solid fa-futbol fa-fw"></i> Intereses</h3>
+        <hr>
+        <ul>
+            <li><i class="fa-solid fa-futbol fa-fw"></i> Fútbol</li>
+            <li><i class="fa-solid fa-camera fa-fw"></i> Fotografía</li>
+            <li><i class="fa-solid fa-fish fa-fw"></i> Pesca</li>
+            <li><i class="fa-solid fa-gamepad fa-fw"></i> Videojuegos</li>
+        </ul>
+    </section>
+    <footer>
+        <p>2023</p>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
